@@ -20,5 +20,5 @@ app.use(express.static(__dirname + "/public"));
 app.use("/", indexRoutes);
 
 http.createServer(app).listen(port, function() {
-    console.log('Express server listening on port ' + app.get('port'));
+    console.log('Express server listening on port ' + port);
 });
