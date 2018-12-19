@@ -2,7 +2,12 @@ const express = require('express');
 var router = express.Router();
 var Message = require('../models/message');
 const request = require('request');
-const bodyParser = require('body-parser');
+const path = require("path");
+
+router.get('/download', function(req, res){
+  var file = path.join(__dirname, '../public/documents/CVJoseVillarroel.pdf');
+  res.download(file);
+});
 
 router.get('/', function (req, res) {
   res.render('index');

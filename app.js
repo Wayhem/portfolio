@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-var Message = require('./models/message');
 var indexRoutes = require('./routes/index');
 var http = require('http');
 var enforce = require('express-sslify');
