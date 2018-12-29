@@ -25,7 +25,7 @@ router.post('/', function (req,res) {
 
   console.log('reached');
   // Secret key
-  const secretKey = '6LdHHXwUAAAAAExWnzGK0A91gJNflMQVeq1hzjmt';
+  const secretKey = process.env.SECRET_KEY;
 
   //verify url
   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteip=${req.connection.remoteAddress}`;
