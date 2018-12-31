@@ -5,13 +5,13 @@ var indexRoutes = require('./routes/index');
 var http = require('http');
 var enforce = require('express-sslify');
 
-var dburl = process.env.DATABASEPORT || 'mongodb://localhost:27017/portfolio';
+// var dburl = process.env.DATABASEPORT || 'mongodb://localhost:27017/portfolio';
 var port = process.env.PORT || 3000;
 
-mongoose.connect(dburl, { useNewUrlParser: true });
+// mongoose.connect(dburl, { useNewUrlParser: true });
 var app = express();
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
+// app.use(enforce.HTTPS({ trustProtoHeader: true }))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
