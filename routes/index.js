@@ -14,7 +14,6 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req,res) {
-  console.log(req.body);
   if(
     req.body.captcha === undefined ||
     req.body.captcha === null ||
@@ -23,7 +22,6 @@ router.post('/', function (req,res) {
     return res.json({"success":false, "msg":"Please select captcha"});
   }
 
-  console.log('reached');
   // Secret key
   const secretKey = process.env.SECRET_KEY;
 
