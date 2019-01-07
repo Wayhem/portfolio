@@ -2,7 +2,6 @@
 <html>
 <head lang="en">
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jose Villarroel Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
@@ -18,8 +17,8 @@
         <nav>
             <div class="row">
                 <ul class="main-nav">
-                    <li><a href="#">Who am I?</a></li>
-                    <li><a href="#">Skillset</a></li>
+                    <li><a class="js--nav-aboutme" href="#">Who am I?</a></li>
+                    <li><a class="js--nav-skills" href="#">Skillset</a></li>
                     <li><a href="https://github.com/Wayhem" target="_blank">Github</a></li>
                     <li><a href="/download" target="_blank">Resume</a></li>
                 </ul>
@@ -28,8 +27,8 @@
         <div class="main-text-box">
             <h1>Jose Villarroel</h1>
             <h2>software developer</h2>
-            <a class="button button-full" href="#">Projects</a>
-            <a class="button button-outline" href="#">Contact</a>
+            <a class="button button-full js--button-projects" href="#">Projects</a>
+            <a class="button button-outline js--button-contact" href="#">Contact</a>
         </div>
     </header>
     <section class="aboutme">
@@ -214,6 +213,11 @@
     </footer>
 
     <script src="/vendors/js/sweetalert2.all.min.js"></script>
+    <script src="/vendors/js/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" integrity="sha256-9uAoNWHdszsUDhSXf/rVcWOqKPfi5/8V5R4UdbZle2A=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
     <script src="/assets/js/custom.js"></script> 
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
