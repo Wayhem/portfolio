@@ -12,13 +12,15 @@
     outline: none;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #4f4f4f;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1;}
@@ -422,12 +424,4 @@ footer {
 
 .social li a .ion-logo-instagram:hover {
     color: #517fa4;
-}
-
-
-
-@media only screen and (max-width: 880px) {
-    .step-box p {
-        display: none;
-    }
 }
