@@ -32,5 +32,21 @@
 			var elem = document.querySelector(selector);
 			elem.scrollIntoView({behavior: "smooth", block: "start"});
 		}
+
+		const createWPAnimation = (selector, animation, offset) => {
+			var waypoint = new Waypoint({
+				element: document.querySelector(selector),
+				handler: function(direction) {
+					document.querySelector(selector).classList.add('animated', animation);
+				},
+				offset: offset
+			})
+		}
+
+		createWPAnimation('.js-point-1', 'fadeIn', '50%');
+		createWPAnimation('.js-point-2', 'fadeInUp', '60%');
+		createWPAnimation('.js-point-3', 'bounceInUp', '50%');
+		createWPAnimation('.js-point-4', 'pulse', '90%');
+		createWPAnimation('.js-point-5', 'bounce', '50%');
 	})
 })();

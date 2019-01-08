@@ -463,3 +463,15 @@ footer {
 .social li a .ion-logo-instagram:hover {
     color: #517fa4;
 }
+
+/* -------------------------------------------- */
+/* animation */
+/* -------------------------------------------- */
+
+.js-point-1,
+.js-point-2,
+.js-point-3 {opacity: 0;}
+
+.js-point-1.animated,
+.js-point-2.animated,
+.js-point-3.animated {opacity: 1;}
