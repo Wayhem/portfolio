@@ -153,6 +153,17 @@ footer p {
 /* Icons */
 /* -------------------------------------------- */
 
+.ld-spinner {
+    display: none;
+}
+
+.i-huge {
+    font-size: 10rem;
+    text-align: center;
+    color: #2196f3;
+    display: none;
+}
+
 .i-big {
     font-size: 3rem;
     display: inline-block;
