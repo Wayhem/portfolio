@@ -48,5 +48,12 @@
 		createWPAnimation('.js-point-3', 'bounceInUp', '50%');
 		createWPAnimation('.js-point-4', 'pulse', '90%');
 		createWPAnimation('.js-point-5', 'bounce', '50%');
+		
+		document.querySelector('.burger-x').addEventListener('click', function(){
+			document.querySelector('.main-nav').classList.toggle('hidden');
+			var burger = document.querySelector('.js-icon');
+			burger.classList.toggle('ion-ios-menu');
+			burger.classList.toggle('ion-ios-close');
+		});
 	})
 })();

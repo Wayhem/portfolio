@@ -234,11 +234,12 @@ input[type=submit]:active  {
 /* -------------------------------------------- */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/main.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/main.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/main-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/main-min.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .main-text-box {
@@ -262,11 +263,13 @@ header {
     list-style: none;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    transition: all 0.3s;
 }
 
 .main-nav li {
     display: inline-block;
     margin-left: 2rem;
+    transition: all 0.3s;
 }
 
 .main-nav li a:link,
@@ -285,6 +288,20 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #2196f3;
     color: #2196f3;
+}
+
+/* mobile nav */
+
+.burger-x {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger-x i {
+    font-size: 2rem;
+    color: #fff;
 }
 
 /* Sticky nav */
@@ -475,3 +492,5 @@ footer {
 .js-point-1.animated,
 .js-point-2.animated,
 .js-point-3.animated {opacity: 1;}
+
+.js-icon {transition: all 0.3s;}
