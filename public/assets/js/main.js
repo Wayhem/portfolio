@@ -1,4 +1,7 @@
-(function() {	
+(function() {
+	window.onload = function(){
+		document.querySelector('.loader').style.display = 'none';
+	}	
 	document.addEventListener("DOMContentLoaded", function() {
 		var waypoint = new Waypoint({
 			element: document.querySelector('.aboutme'),
