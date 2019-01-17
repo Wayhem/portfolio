@@ -21,6 +21,7 @@
         margin-left: 15%;
         text-align: justify;
     }
+    .preloader {margin: 35% auto;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -96,10 +97,12 @@
     .sticky .burger-x {margin-top: 10px;}
     .sticky .burger-x i {color: #555;}
     
+    .preloader {margin: 60% auto;}
 }
 
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
     .contact-form { width: 100%; }
+    .preloader {margin: 70% auto;}
 }
 
