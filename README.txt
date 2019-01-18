@@ -1,21 +1,3 @@
+# Portfolio
 
-A little adaptation to a personal Portfolio I made
-
-Jose Villarroel
-
-
-Credits:
-        
-	Template:
-		Dimension by HTML5 UP
-		html5up.net | @ajlkn
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+A small handmade portfolio using nothing but HTML/CSS for layout and display, small amount of JS for DOM manipulation, made in order to share my project with everybody else. Uses express and mongodb to handle user input and recaptcha to avoid Spams.
